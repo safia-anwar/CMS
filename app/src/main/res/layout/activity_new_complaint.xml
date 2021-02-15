@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewComplaint">
+    <RelativeLayout
+        android:layout_width="4000dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/alll"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/grey"
+            android:layout_centerHorizontal="true"
+            android:text="Select (All fields are required)"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_below="@id/alll"
+            android:layout_marginTop="3dp"
+            android:id="@+id/ll"
+            android:textColor="@color/green"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/ll"
+            android:layout_marginTop="10dp"
+            android:id="@+id/location"
+            android:entries="@array/location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:layout_below="@id/location"
+            android:layout_marginTop="3dp"
+            android:id="@+id/dep"
+            android:textColor="@color/green"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/dep"
+            android:layout_marginTop="10dp"
+            android:id="@+id/department"
+            android:entries="@array/department"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_below="@id/department"
+            android:layout_marginTop="3dp"
+            android:id="@+id/cat"
+            android:textColor="@color/green"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/cat"
+            android:layout_marginTop="10dp"
+            android:id="@+id/category"
+            android:entries="@array/category"/>
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/grey"
+            android:layout_centerHorizontal="true"
+            android:text="Detail(Subject and comment required)"
+            android:textSize="15dp"
+            android:layout_below="@id/category"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:layout_below="@id/detail"
+            android:id="@+id/MRnum"
+            android:hint="MR Number(if any)"
+            android:layout_marginTop="3dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="200"
+            android:layout_below="@id/MRnum"
+            android:id="@+id/subject"
+            android:hint="Subject"
+            android:layout_marginTop="3dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:ems="200"
+            android:layout_below="@id/subject"
+            android:id="@+id/comment"
+            android:hint="Comments"
+            android:layout_marginTop="3dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/comment"
+            android:backgroundTint="@color/green"
+            android:text="Post"
+            android:id="@+id/postComplaint"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+include ':design'
+include ':app'
+rootProject.name = "ComplaintMS"

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_below="@id/signup"
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_below="@id/firstName"
+        android:id="@+id/Lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:layout_marginTop="3dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cellno"
+        android:layout_below="@id/Lastname"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:ems="15"
+        android:hint="cell # (Ex:03XXXXXXXXX)"
+        android:layout_marginTop="3dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailAddress"
+        android:inputType="textEmailAddress"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cellno"
+        android:layout_marginTop="3dp"
+        android:hint="Email Address"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/EmailAddress"
+        android:layout_marginTop="3dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/TextPassword"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/TextPassword"
+        android:layout_marginTop="3dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:id="@+id/Confirmpassword"/>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Confirmpassword"
+        android:layout_centerHorizontal="true"
+        android:text="Create Account"
+        android:backgroundTint="#09870E"
+        android:layout_marginTop="5dp"
+        android:id="@+id/Signupbtn"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:layout_below="@id/Signupbtn"
+        android:textColor="@color/black"
+        android:id="@+id/already"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Loginbutton"
+        android:text="Login"
+        android:backgroundTint="#09870E"
+        android:layout_below="@id/already"
+        android:layout_marginTop="5dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+       <ImageView
+           android:id="@+id/logo"
+           android:layout_width="250dp"
+           android:layout_height="200dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+           android:src="@drawable/child"
+           />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:text="Improvement Opportunity System"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="15"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Loginbutton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#09870E"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/Loginbutton"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#09870E"
+        android:text="Create Account" />
+
+    <Button
+        android:id="@+id/TrackComp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FFC107"
+        android:text="Track Complaints" />
+
+</RelativeLayout>
